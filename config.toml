@@ -1,0 +1,54 @@
+BaseURL = "http://www.okavatar.com/blog/"
+LanguageCode = "zh-CN"
+HasCJKLanguage = true
+Title = "OKAvatar's Blog"
+Theme = "hugo-pacman-theme"
+pygmentsStyle = "default"
+pygmentsUseClasses = true
+
+[Author]
+  Name = "OKAvatar"
+
+[outputs]
+  home = [ "RSS", "HTML" ]
+    
+[outputFormats] 
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+
+[Params]
+  AuthorName = "OKAvatar"
+  AuthorHomepage = "http://www.okavatar.com/blog/"
+  BottomIntroduce = "佛系学习 <br/> 安心玩技术"
+  Description = "OKAvatar的博客"
+  Subtitle = "OKAvatar的博客"
+  GitHub = "okavatar"
+  Imglogo = "img/pacman.png"
+  AuthorImg = "img/author.png"
+  DateFormat = "2006年01月02日"
+  MonthFormat = "2006年01月"
+  FancyBox = true
+  ShowSearch = false
+
+  [Params.Strings]
+    Search = "搜索"
+    PageNotFound = "你访问的页面不存在"
+    ShowSideBar = "显示侧边栏"
+    HideSideBar = "隐藏侧边栏"
+    Categories = "分类"
+    Archive = "归档"
+    Tags = "标签"
+    TagCloud = "标签云"
+    Rss = "RSS 订阅"
+    TableOfContents = "文章目录"
+
+[Menu]
+  [[Menu.Main]]
+    Name = "首页"
+    URL = "/"
+    Weight = 1
+  [[Menu.Main]]
+    Name = "关于"
+    URL = "/about"
+    Weight = 2
